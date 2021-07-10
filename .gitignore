@@ -1,0 +1,3 @@
+*.o
+*.sln
+linux64/mprime
