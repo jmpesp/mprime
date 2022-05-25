@@ -1,5 +1,7 @@
 # apt pre-reqs
 
+    if on ubuntu, may need universe
+
     sudo apt install \
              libudev-dev \
              libhwloc-dev \
@@ -9,11 +11,8 @@
 # compile UASM
 
     git clone https://github.com/Terraspace/UASM
-    git submodule init https://github.com/Terraspace/UASM
     cd UASM
     git checkout v2.52
-    https://raw.githubusercontent.com/justdan96/7zip_static/main/dbgcv.patch
-    patch < dbgcv.patch
     CFLAGS="-std=c99 -static" make CC="clang -fcommon" -f gccLinux64.mak
 
     $ ls GccUnixR/uasm
@@ -27,9 +26,10 @@
 # compile factor64.o
 
     cd prime95
-    ./build.sh.
+    ./build.sh
 
 # compile linux64
 
-make should work now
+    cd linux64
+    make
 
