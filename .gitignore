@@ -1,3 +1,7 @@
 *.o
 *.sln
 linux64/mprime
+linux64/factor64.obj
+linux64/local.txt
+linux64/prime.txt
+linux64/results.txt
