@@ -17,7 +17,7 @@ sudo apt install -y \
 
 # compile UASM
 
-git clone https://github.com/Terraspace/UASM
+[[ -e UASM ]] || git clone https://github.com/Terraspace/UASM
 (
  cd UASM
  git checkout v2.52
