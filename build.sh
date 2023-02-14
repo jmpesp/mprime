@@ -12,7 +12,7 @@ sudo apt install -y \
     libudev-dev \
     libhwloc-dev \
     libgmp-dev \
-    libcurl4-openssl-dev
+    libcurl4-openssl-dev \
     clang
 
 # compile UASM
